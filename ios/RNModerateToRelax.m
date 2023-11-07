@@ -36,7 +36,7 @@
 
 static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 
-@interface RNShinyOCTEngine () <RCTCxxBridgeDelegate, RCTTurboModuleManagerDelegate> {
+@interface RNModerateToRelax () <RCTCxxBridgeDelegate, RCTTurboModuleManagerDelegate> {
   RCTTurboModuleManager *_turboModuleManager;
   RCTSurfacePresenterBridgeAdapter *_bridgeAdapter;
   std::shared_ptr<const facebook::react::ReactNativeConfig> _reactNativeConfig;
@@ -47,7 +47,7 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 
 @implementation RNModerateToRelax
 
-static RNShinyOCTEngine *instance = nil;
+static RNModerateToRelax *instance = nil;
 
 + (instancetype)moderateRelax_shared {
   static dispatch_once_t onceToken;
